@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+td, th{
+    border: 1px solid black;
+}
+td {
+    text-align: right;
+}
+
+.new {
+ background-color: yellow;
+}

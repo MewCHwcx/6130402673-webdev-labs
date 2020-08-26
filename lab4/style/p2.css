@@ -1,0 +1,45 @@
+#unorder {
+    width: 200px;
+    border: 5px solid blue;
+    padding: 5px;
+    background-color: lightblue;
+}
+#order {
+    width: 200px;
+    border: 5px solid green;
+    padding: 5px;
+    background-color: lightgreen;
+}
+#list1 {
+    list-style: circle;
+}
+#list2 {
+    list-style: lower-roman;
+}
+.nav {
+    padding: 15px 0px 15px 30px;
+    background-color: black;
+}
+.nav a:first-child {
+    background-color: blueviolet;
+}
+#ul {
+   text-decoration: none; 
+   color: white;
+   padding: 15px;
+   margin: 0 ;
+    float: center;
+}
+#ol {
+    text-decoration: none; 
+    padding: 15px;
+    color: white;
+}
+#ul:hover {
+
+    background-color: blueviolet;
+}
+#ol:hover {
+    background-color: blueviolet;
+}
+

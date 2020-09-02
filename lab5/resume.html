@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+    header/, images/, link/, table/, list/, form/
+    background color/, font size/, font style/, margin/, padding/, list item style/
+    CSS responsive view phone, tablet,desktop **not sure**
+    interaction (javascipt)/
+-->
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Resume</title> 
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+            <h2>Chayanis Wongboonmee</h2>
+            <p class="h2">Resume</p>
+        </header>
+        <div id="block_container2">
+       <div class="image">
+            <center><img src="images/me.jpg" ></center>
+      </div>
+       <div class="perInfo">
+        <p id="info">Personal Information</p>
+        <ul id="list3">
+         <li>Nickname: Mew</li>
+         <li>Date of Birth: August 6, 1999</li>
+         <li>Age: 21 yrs.</li>
+         <li>Gender: Female</li>
+         <li>Nationality: Thai</li>
+         <li>Religion: Buddhism</li>
+     </ul>
+       </div>
+        </div>
+       <div id="block_container">
+       <div class="detail">
+           <p class="ed">Education</p>
+           <ul id="list1">
+            <li>Elementary School (2005-2012) <br> 👉 Anuban Khonkaen School</li>
+            <li>High School (2012-2018) <br> 👉 Khonkaenwittayon School</li>
+            <li>Bachelor's Degree (2018-Present) <br> 👉 Computer Engineering, Khonkaen University </li>
+        </ul>
+       </div>
+       <div class="detail1">
+           <p class="skill">Skill</p>
+           <p class="max">[Max = Lv.5]</p>
+           <ul id="list2">
+            <li>Programming Language <br> 🔥 Java [Lv.4] <br> 🔥 Python [Lv.3] <br> 🔥 HTML [Lv.2] <br> 🔥 CSS [Lv.2]</li>
+            <li>Design Skill <br> 🔥 Photoshop CC [Lv.2] <br> 🔥 Adobe XD [Lv.1] </li>
+            <li>Soft Skill <br> 🔥 Leadership [Lv.4] <br> 🔥 Writer [Lv.2]</li>
+        </ul>
+
+       </div>
+       <div class="detail2">
+        <p class="hobbyInt"> Hobby & Interest </p>
+        <table>
+            <tr>
+                <th>Hobby 🎧</th>
+                <th>Interests 🎮</th>
+            </tr>
+            <tr>
+                <td>Write fictions</td>
+                <td>Video making</td>
+            </tr>
+            <tr>
+                <td>Photo editing</td>
+                <td>Photo editing</td>
+            </tr>
+            <tr>
+                <td>Listen podcasting </td>
+                <td>Web dev.</td>
+            </tr>
+            <tr>
+                <td>Play games</td>
+                <td>Games design</td>
+            </tr>
+        </table>
+
+    </div>
+    </div>
+    <div class="detail3">
+        <p class="contact">Contact</p>
+        <div>
+            <form>
+            <label for="ct" class="label2">Contact me here</label>
+            <br><input type="text" id="ln" name="input_contact">
+            <br>
+            <br>
+            <center><div><button class="button" onclick="myFunction(); return false;" ><b>Submit</b></button>
+                <script>
+                    function myFunction() {
+                        let name = document.querySelector("#ln");
+                        alert(name.value);
+                    }
+                    </script>
+            </div></center>
+            </form>
+        </div>
+        <p id="or">- OR -</p>
+        <center><a href="https://www.facebook.com/mew.chha/" target="_blank" id="fb"> Facebook </a> 
+        <br>        
+        <a href="https://www.instagram.com/m__150_/" target="_blank" id="ig"> Instagram </a>
+        <br>
+        <a id="email">email: en.chayanis@kkumail.com</a></center>
+        
+    </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Book List</title>
+  </head>
+  <body>
+    <h1>My Book List</h1>
+    <div id="books_list">Click to generate my book list</div>
+    <script>
+          var books = [
+      		{
+       			title: 'Sapiens: A Brief History of Humankind',
+        			url: "https://www.goodreads.com/book/show/23692271-sapiens"
+        			, author: 'Yuval Noah Harari' 
+      		}, {
+        			title: 'The Glass Castle',
+        			url: "https://www.goodreads.com/book/show/7445.The_Glass_Castle"
+       			 ,author: 'Jeannette Walls'
+      		}
+   	 ];
+        const click = document.getElementById("books_list");
+        click.addEventListener("click", onclick);
+        function onclick() {
+            const orderList = document.createElement("ol")
+            for (i = 0; i < books.length; i++) {
+                const list = document.createElement("li")
+                list.innerHTML = `<a href = "${books[i].url}" >${books[i].title}</a> by' ${books[i].author}`
+                orderList.appendChild(list)
+
+            }
+            document.body.appendChild(orderList)
+        }
+ 
+    </script>
+  </body>
+</html>

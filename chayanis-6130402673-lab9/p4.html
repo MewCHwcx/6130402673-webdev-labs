@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+    <body> 
+    <ol id="demo"></ol>
+    <script>
+
+        fetch('place.json').then(response => {
+            return response.json();
+        }).then(data => {
+            for (var place of data.results) {
+                const li = document.createElement('li');
+                li.innerHTML = `<p style="color: blue"> name = ${place.name} </p>`
+                + `<p style="color: green">location = ${place.geometry.location.lat} ${place.geometry.location.lng}</p>`
+                document.querySelector('#demo').append(li);
+            }
+        })
+    </script>
+    </body>
+</html>

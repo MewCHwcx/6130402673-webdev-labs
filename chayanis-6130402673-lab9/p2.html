@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+    <body> 
+    <h2>Readind Students Information</h2>
+    <p id="demo"></p>
+    <script>
+        fetch('students.json').
+        then(response => response.text())
+        .then(data =>{
+            document.getElementById("demo").textContent = data;
+        })
+    </script>
+    </body>
+</html>

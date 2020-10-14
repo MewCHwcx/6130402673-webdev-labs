@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    <body> 
+    <h2>Readind Students Information</h2>
+    <ol id="demo"></ol>
+    <script>
+
+        fetch('students.json').then(response => {
+            return response.json();
+        }).then(data => {
+            student = data.wclass
+            for (var person of student) {
+                const li = document.createElement('li');
+                li.innerHTML = `${person.student["@attributes"].id}`
+                + ` <strong>${person.student['name']}</strong> `
+                + ` has skills <em>${person.student['skill']}</em>` 
+                document.querySelector('#demo').append(li);
+            }
+        })
+    </script>
+    </body>
+</html>

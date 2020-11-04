@@ -1,0 +1,17 @@
+{
+  "name": "chayanis-6130402673-lab10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

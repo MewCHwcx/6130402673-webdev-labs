@@ -1,0 +1,19 @@
+html
+    head
+        title Problem2
+    body
+        h1(style="text-align:center;")=name
+        form(action = "/", method = "POST")
+            div 
+                label(for="name") Name:
+                input(name = "name" value = "Manee" style="margin-left:270px;")
+            br
+            div
+                label(for="company") Internship company:
+                input(name = "company" value = "IBM Research Watson" style="margin-left:180px;")
+            br
+            div
+                label(for="skill") Skills:
+                input(name = "skill" value = "HTML, CSS, JavaScipt" style="margin-left:270px;")
+            br
+            button(type = "submit") Submit

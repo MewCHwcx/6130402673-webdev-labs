@@ -1,0 +1,20 @@
+{
+    "user1": {
+        "name":"manee",
+        "profession":"student",
+        "hobbie":"listening to songs",
+        "id":1
+    },
+    "user2": {
+        "name":"mana",
+        "profession":"teacher",
+        "hobbie":"reading",
+        "id":2
+    },
+    "user3": {
+        "name":"chujai",
+        "profession":"athlete",
+        "hobbie":"running",
+        "id":3
+    }
+}
